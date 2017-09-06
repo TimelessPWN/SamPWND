@@ -69,3 +69,35 @@ usleep 5000
 pm clear com.samsung.knox.appsupdateagent
 pm disable com.samsung.knox.appsupdateagent
 pm uninstall --user 0 com.samsung.knox.appsupdateagent
+usleep 5000
+pm clear com.sec.knox.foldercontainer
+pm disable com.sec.knox.foldercontainer
+pm uninstall --user 0 com.sec.knox.foldercontainer
+usleep 5000
+pm clear com.samsung.android.mdm
+pm disable com.samsung.android.mdm
+pm uninstall --user 0 com.samsung.android.mdm
+usleep 5000
+pm clear com.sec.enterprise.knox.myknoxsetupagent
+pm disable com.sec.enterprise.knox.myknoxsetupagent
+pm uninstall --user 0 com.sec.enterprise.knox.myknoxsetupagent
+usleep 5000
+pm clear com.policydm
+pm disable com.policydm
+pm uninstall --user 0 com.policydm
+usleep 5000
+pm clear com.sec.android.providers.security
+pm disable com.sec.android.providers.security
+pm uninstall --user 0 com.sec.android.providers.security
+usleep 5000
+pm clear com.samsung.android.securitylogagent
+pm disable com.samsung.android.securitylogagent
+pm uninstall --user 0 com.samsung.android.securitylogagent
+usleep 5000
+pm clear com.sec.android.service.sm
+pm disable com.sec.android.service.sm
+pm uninstall --user 0 com.sec.android.service.sm
+usleep 5000
+pm clear com.skms.android.agent
+pm disable com.skms.android.agent
+pm uninstall --user 0 com.skms.android.agent
