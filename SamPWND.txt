@@ -1,0 +1,60 @@
+if {
+	developer_options==enabled
+		{
+		return 0
+	}
+}
+else
+	{
+	developer_options==disabled
+		{
+		#prompt user to enable developer options (settings --> about phone --> tap build number 7 times
+		#open settings upon user response
+	}
+}
+if {
+	usb_debugging==enabled
+		{
+		return 0
+	}
+}
+else
+	{ 
+	usb_debugging==disabled
+		{
+		#prompt user to enable usb debugging
+		#open settings upon user response
+	}
+}
+if {
+	required_files==true
+		{
+		return 0
+	}
+	else
+	{
+	required_files==false
+		{
+		#prompt user to download requested files
+		#wait for response(yes/no)
+		}
+	}
+}
+if {
+	setsid su 0=true
+		if  {
+			dreamqltesq==root
+			#run command exit until a stable root shell is obtained
+		}
+		else
+		{
+		dreamqltesq==user
+			{
+			#run enter command until shell is returned to root
+		}
+	}
+}
+else
+	{
+	return 0
+}
